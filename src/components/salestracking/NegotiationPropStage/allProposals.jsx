@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 //Negotiation & Proposal Stage
 // •	Proposal Sent Date
 // •	Demo Completed

@@ -21,6 +21,13 @@ const handleSubmit = (e) => {
   console.log('New Closing:',postSaleData ); // Replace with actual handling logic
   alert('Contact saved successfully!');
 };
+
+
+
+
+
+
+
 }
 
 
@@ -34,4 +41,3 @@ const handleSubmit = (e) => {
 
 
 
-}

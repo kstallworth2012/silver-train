@@ -37,7 +37,7 @@ export default function CreateClosing() {
             </div>
           ))}
           <button type="submit" style={{ padding: '10px', cursor: 'pointer' }}>
-            Save Contact
+            Save Closing
           </button>
         </form>
       </div>
