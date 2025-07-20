@@ -15,6 +15,38 @@ export default function CreateClosing() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('New Closing:', closeData); // Replace with actual handling logic
-    alert('Contact saved successfully!');
+    alert('Closing saved successfully!');
   };
+
+
+  return (
+    <>
+      <div style={{ maxWidth: '500px', margin: 'auto', padding: '20px' }}>
+        <h2>Create New Closing</h2>
+        <form onSubmit={handleSubmit}>
+          {Object.keys(closeData).map((field) => (
+            <div key={field} style={{ marginBottom: '10px' }}>
+              <label>{field}</label>
+              <input
+                type="text"
+                name={field}
+                value={closeData[field]}
+                onChange={handleChange}
+                style={{ width: '100%', padding: '8px' }}
+              />
+            </div>
+          ))}
+          <button type="submit" style={{ padding: '10px', cursor: 'pointer' }}>
+            Save Contact
+          </button>
+        </form>
+      </div>
+    </>
+  );
+
+
+
+
+
+
 }
